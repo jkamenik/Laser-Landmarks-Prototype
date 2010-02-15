@@ -1,5 +1,5 @@
-= Design =
+= Design
 Contains basic mockups, flows, etc.
 
-= Samples =
+= Samples
 Check /samples for basic HTML screens.
