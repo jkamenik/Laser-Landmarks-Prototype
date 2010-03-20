@@ -1,16 +1,49 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    
     <title>Laser Landmarks</title>
-    <LINK href="styles.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+    
+    <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" />
+    <link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+      /* Apply fancybox to multiple items */
+      $("a[rel=example_group]").fancybox({
+        'transitionIn'    : 'none',
+        'transitionOut'   : 'none'
+        // 'titlePosition'   : 'over',
+        // 'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+        //   return '<span id="fancybox-title-over">Image ' +  
+        //          (currentIndex + 1) + ' / ' + 
+        //          currentArray.length + '</span>';
+        // }
+      });
+    });
+    </script>
   </head>
   <body>
-    <img src="background.jpg" id="bg" />
+    <img src="background.jpg" id="bg" alt="wood grain" />
     
     <div id="page">
-      <div class="header">
-        <h1>Laser Landmarks</h1>
-        <h2>Engraving Lasting Memories</h2>
-        <h3>By Pete Kamenik</h3>
+      <div id="header">
+        <table>
+          <tr>
+            <td class="image">&nbsp;</tb>
+            <td class="text">
+              <h2>Engraving Lasting Memories</h2>
+              <h3>By Pete Kamenik</h3>
+            </td>
+          </tr>
+        </table>
       </div>
       
       <div id="sidebar">
@@ -40,7 +73,7 @@
         <h1>All Products</h1>
         <div class="imageviewer">
           <h1>Bethany Beach Totem Pole</h1>
-          <img src="sample.jpg">
+          <a rel="example_group" title="Bethany Beach Totem Pole" href="sample.jpg"><img src="sample.jpg" alt="" /></a>
           <table>
             <tr><td>Material:</td><td>Wood</td></tr>
             <tr><td>Product:</td><td>Trivet</td></tr>
@@ -50,7 +83,7 @@
         
         <div class="imageviewer">
           <h1>Bethany Beach Totem Pole</h1>
-          <img src="sample.jpg">
+          <a rel="example_group" title="Bethany Beach Totem Pole" href="sample.jpg"><img src="sample.jpg" alt="" /></a>
           <table>
             <tr><td>Material:</td><td>Wood</td></tr>
             <tr><td>Product:</td><td>Trivet</td></tr>
@@ -60,7 +93,7 @@
         
         <div class="imageviewer">
           <h1>Bethany Beach Totem Pole</h1>
-          <img src="sample.jpg">
+          <a rel="example_group" title="Bethany Beach Totem Pole" href="sample.jpg"><img src="sample.jpg" alt="" /></a>
           <table>
             <tr><td>Material:</td><td>Wood</td></tr>
             <tr><td>Product:</td><td>Trivet</td></tr>
@@ -70,7 +103,7 @@
         
         <div class="imageviewer">
           <h1>Bethany Beach Totem Pole</h1>
-          <img src="sample.jpg">
+          <a rel="example_group" title="Bethany Beach Totem Pole" href="sample.jpg"><img src="sample.jpg" alt="" /></a>
           <table>
             <tr><td>Material:</td><td>Wood</td></tr>
             <tr><td>Product:</td><td>Trivet</td></tr>

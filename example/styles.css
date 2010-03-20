@@ -18,7 +18,7 @@ div#page {
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-  width: 800;
+  width: 800px;
   border: 1px solid black;
   padding-left: 3px;
   padding-right: 3px;
@@ -26,6 +26,23 @@ div#page {
   /* rounded corners */
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
+}
+
+div#header {
+  height: 150px;
+}
+div#header table {
+  width: 100%;
+}
+div#header .image {
+  background-image: url(header_128.jpg);
+  background-repeat:no-repeat;
+  background-position:top right;
+  height: 128px;
+  width: 410px;
+}
+div#header .text {
+  text-align: center;
 }
 
 div#sidebar {
@@ -60,7 +77,7 @@ div#sidebar {
 
 div#content {
   float: right;
-  width: 590; /*800 - 6px margin - 4px border - 200px sidebar */
+  width: 590px; /*800 - 6px margin - 4px border - 200px sidebar */
 }
 
 #content h1 {
@@ -68,7 +85,7 @@ div#content {
 }
 
 .imageviewer {
-  width: 280;
+  width: 280px;
   margin-right: 3px;
   margin-bottom: 3px;
   float: left;
@@ -97,4 +114,12 @@ div#content {
   clear:both;
   margin-top: 5px;
   text-align: center;
+}
+
+/* add rounded corners to fancy box */
+#fancybox-outer {
+  border: 2px solid rgb(138,138,138);
+  /* rounded corners */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
