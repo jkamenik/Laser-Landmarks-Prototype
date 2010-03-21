@@ -30,19 +30,29 @@ div#page {
 
 div#header {
   height: 150px;
+  margin-top: 5px;
 }
 div#header table {
   width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+div#header table td {
+  padding: 0px;
+  margin: 0px;
 }
 div#header .image {
-  background-image: url(header_128.jpg);
+  background-image: url(header_128.png);
   background-repeat:no-repeat;
   background-position:top right;
   height: 128px;
-  width: 410px;
+  width: 400px;
 }
 div#header .text {
   text-align: center;
+  background-image: url(header_right_128.png);
+  background-repeat: repeat-x;
+  background-position: top left;
 }
 
 div#sidebar {
