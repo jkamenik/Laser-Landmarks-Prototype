@@ -56,33 +56,64 @@ div#header .text {
 }
 
 div#sidebar {
+  /* puts the nav next to the content */
+  float: left;
+  width: 200px;
+}
+
+div#sidebar div {
   background-color: rgb(145,145,145);
   border: 2px solid black;
   color: rgb(231,231,231);
   margin: 0;
-  
-  /* puts the sidebar next to the content */
-  float: left;
-  width: 200px;
+  margin-bottom: 10px;
   
   /* rounded corners */
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
 
-#sidebar li {
+div#sidebar ul {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+div#sidebar li {
+  display: block;
+  margin: 0px;
 /*  margin-left: -1em;*/
   list-style-type: none;
   list-style-position: inside;
-  padding: 0;
+  padding-left: 10px;
 }
 
-#sidebar li.header {
-  margin-top: 1em;
+div#sidebar li.header {
+  margin-top: .75em;
+  margin-bottom: .75em;
 }
 
-#sidebar .selected {
+div#sidebar .selected {
   font-style: italic;
+}
+
+div#twitter_div li {
+  margin-top: .75em;
+  margin-bottom: .75em;
+}
+div#twitter_div li::before {
+  content: '-> ';
+}
+div#twitter_div h2 {
+  font-size: 1em;
+  text-align: center;
+}
+div#twitter_div a {
+  color: rgb(231,231,231);
+}
+div#twitter_div #twitter-link {
+  margin-right: 10px;
 }
 
 div#content {
