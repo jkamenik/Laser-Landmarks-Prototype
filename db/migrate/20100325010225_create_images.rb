@@ -2,7 +2,8 @@ class CreateImages < ActiveRecord::Migration
   def self.up
     create_table :images do |t|
       t.string :title
-      t.string :path
+      t.string :image_path
+      t.string :icon_path
       t.string :material
       t.string :product
       t.string :subject
