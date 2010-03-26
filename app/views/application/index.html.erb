@@ -1,3 +1,1 @@
-<% @items.each do |i| %>
-  <%= render :partial => 'image_viewer', :locals => i %>
-<% end %>
+<%= render :partial => 'image_viewer', :collection => @items %>

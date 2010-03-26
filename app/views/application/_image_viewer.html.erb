@@ -1,9 +1,9 @@
 <div class="imageviewer">
-  <h1><%= title %></h1>
-  <a rel="example_group" title="<%= title %>" href="images/large/<%= large %>"><%= image_tag "small/#{small}" %></a>
+  <h1><%= image_viewer.title %></h1>
+  <a rel="example_group" title="<%= image_viewer.title %>" href="images/large/<%= image_viewer.image_path %>"><%= image_tag "small/#{image_viewer.icon_path}" %></a>
   <table>
-    <tr><td>Material:</td><td>Wood</td></tr>
-    <tr><td>Product:</td><td>Trivet</td></tr>
-    <tr><td>Category:</td><td>Misc</td></tr>
+    <tr><td>Material:</td><td><%= image_viewer.material %></td></tr>
+    <tr><td>Product:</td><td><%= image_viewer.product %></td></tr>
+    <tr><td>Category:</td><td><%= image_viewer.subject %></td></tr>
   </table>
 </div>

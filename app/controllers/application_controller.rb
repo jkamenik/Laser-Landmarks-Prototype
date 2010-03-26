@@ -18,22 +18,23 @@ class ApplicationController < ActionController::Base
   ]
   
   def index
-    @items = [{
-      title: 'APG Ordinance Museum',
-      large: 'APG Ordnance Museum Trivet.jpg',
-      small: 'APG Ordnance Museum Trivet.jpg'
-    },{
-      title: 'Back Creek Store',
-      large: 'Back Creek Store on Trivet.jpg',
-      small: 'Back Creek Store on Trivet.jpg'
-    },{
-      title: 'Baltimore Inner Harbor Trivet',
-      large: 'Baltimore Inner Harbor Trivet.jpg',
-      small: 'Baltimore Inner Harbor Trivet.jpg'
-    },{
-      title: 'Byard House on Trivet',
-      large: 'Byard House on Trivet.jpg',
-      small: 'Byard House on Trivet.jpg'
-    }]
+    @items = Image.all
+    # @items = [{
+    #   title: 'APG Ordinance Museum',
+    #   large: 'APG Ordnance Museum Trivet.jpg',
+    #   small: 'APG Ordnance Museum Trivet.jpg'
+    # },{
+    #   title: 'Back Creek Store',
+    #   large: 'Back Creek Store on Trivet.jpg',
+    #   small: 'Back Creek Store on Trivet.jpg'
+    # },{
+    #   title: 'Baltimore Inner Harbor Trivet',
+    #   large: 'Baltimore Inner Harbor Trivet.jpg',
+    #   small: 'Baltimore Inner Harbor Trivet.jpg'
+    # },{
+    #   title: 'Byard House on Trivet',
+    #   large: 'Byard House on Trivet.jpg',
+    #   small: 'Byard House on Trivet.jpg'
+    # }]
   end
 end
