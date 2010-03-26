@@ -3,18 +3,23 @@
     <li class="header selected">All Products</li>
     <li class="header">By Materials
       <ul>
-        <li>Cork</li>
-        <li>Wood</li>
+        <% Image.connection.select_values("select distinct(material) from #{Image.table_name}").each do |mat| %>
+          <li><%= mat %></li>
+        <% end %>
       </ul>
     </li>
     <li class="header">By Type
       <ul>
-        <li>Trivets</li>
+        <% Image.connection.select_values("select distinct(product) from #{Image.table_name}").each do |mat| %>
+          <li><%= mat %></li>
+        <% end %>
       </ul>
     </li>
     <li class="header">By Subject
       <ul>
-        <li>Light Houses</li>
+        <% Image.connection.select_values("select distinct(subject) from #{Image.table_name}").each do |mat| %>
+          <li><%= mat %></li>
+        <% end %>
       </ul>
     </li>
     <li class="header">About Me</li>
