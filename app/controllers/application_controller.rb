@@ -19,22 +19,11 @@ class ApplicationController < ActionController::Base
   
   def index
     @items = Image.all
-    # @items = [{
-    #   title: 'APG Ordinance Museum',
-    #   large: 'APG Ordnance Museum Trivet.jpg',
-    #   small: 'APG Ordnance Museum Trivet.jpg'
-    # },{
-    #   title: 'Back Creek Store',
-    #   large: 'Back Creek Store on Trivet.jpg',
-    #   small: 'Back Creek Store on Trivet.jpg'
-    # },{
-    #   title: 'Baltimore Inner Harbor Trivet',
-    #   large: 'Baltimore Inner Harbor Trivet.jpg',
-    #   small: 'Baltimore Inner Harbor Trivet.jpg'
-    # },{
-    #   title: 'Byard House on Trivet',
-    #   large: 'Byard House on Trivet.jpg',
-    #   small: 'Byard House on Trivet.jpg'
-    # }]
+  end
+  
+  def selection
+    @items = Image.all :conditions => {params[:column].to_sym => params[:type]}
+    
+    render :template => 'application/index'
   end
 end

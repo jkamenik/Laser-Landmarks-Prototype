@@ -34,6 +34,8 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
   
   map.root :controller => "application"
+  
+  map.connect ':column/:type', :controller => 'application', :action => 'selection'
 
   # See how all your routes lay out with "rake routes"
 
