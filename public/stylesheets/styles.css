@@ -18,7 +18,7 @@ div#page {
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
+  width: 850px;
   border: 1px solid black;
   padding-left: 3px;
   padding-right: 3px;
@@ -124,7 +124,7 @@ div#twitter_div #twitter-link {
 
 div#content {
   float: right;
-  width: 590px; /*800 - 6px margin - 4px border - 200px sidebar */
+  width: 640px; /*800 - 6px margin - 4px border - 200px sidebar */
 }
 
 #content h1 {
@@ -132,7 +132,8 @@ div#content {
 }
 
 .imageviewer {
-  width: 280px;
+  width: 200px;
+  height: 320px;
   margin-right: 3px;
   margin-bottom: 3px;
   float: left;
@@ -147,12 +148,16 @@ div#content {
   font-size: .75em;
 }
 .imageviewer h1 {
+  height: 50px;
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
 }
 .imageviewer img {
-  display: block;
+  height: 200px;
+  width: 200px;
+  border: 0;
+/*  display: block;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -166,6 +171,7 @@ div#content {
   clear:both;
   margin-top: 5px;
   text-align: center;
+  border-top: 1px solid gray;
 }
 
 /* add rounded corners to fancy box */
