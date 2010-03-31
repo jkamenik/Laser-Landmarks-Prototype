@@ -1,27 +1,27 @@
 <div id="nav">
   <ul>
-    <li class="header selected">All Products</li>
+    <li class="header"><a href="/">All Products</a></li>
     <li class="header">By Materials
       <ul>
         <% Image.connection.select_values("select distinct(material) from #{Image.table_name}").each do |mat| %>
-          <li><%= mat %></li>
+          <li><a href="/material/<%=mat%>"><%= mat %></a></li>
         <% end %>
       </ul>
     </li>
     <li class="header">By Type
       <ul>
         <% Image.connection.select_values("select distinct(product) from #{Image.table_name}").each do |mat| %>
-          <li><%= mat %></li>
+          <li><a href="/product/<%=mat%>"><%= mat %></a></li>
         <% end %>
       </ul>
     </li>
     <li class="header">By Subject
       <ul>
         <% Image.connection.select_values("select distinct(subject) from #{Image.table_name}").each do |mat| %>
-          <li><%= mat %></li>
+          <li><a href="/subject/<%=mat%>"><%= mat %></a></li>
         <% end %>
       </ul>
     </li>
-    <li class="header">About Me</li>
+    <!--<li class="header">About Me</li>-->
   </ul>
 </div>

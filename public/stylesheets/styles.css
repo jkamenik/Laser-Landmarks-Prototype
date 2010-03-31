@@ -104,6 +104,13 @@ div#sidebar .selected {
   color: white;
 }
 
+#sidebar #nav a {
+  color: rgb(231,231,231);
+}
+#sidebar #nav.hover a {
+  color: white;
+}
+
 div#twitter_div li {
   margin-top: .75em;
   margin-bottom: .75em;
