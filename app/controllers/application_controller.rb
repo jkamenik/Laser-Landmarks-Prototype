@@ -8,11 +8,6 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  ActionView::Helpers::AssetTagHelper.register_javascript_expansion :app => [
-    "jquery-1.4.2.min",
-    'application'
-  ]
-  
   ActionView::Helpers::AssetTagHelper.register_stylesheet_expansion :defaults => [
     "styles"
   ]
