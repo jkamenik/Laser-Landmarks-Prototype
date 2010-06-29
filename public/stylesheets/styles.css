@@ -111,6 +111,13 @@ div#sidebar .selected {
   color: white;
 }
 
+#sidebar #nav .sep {
+  height: 1px;
+  color: black;
+  background-color: black;
+  border: 0px;
+}
+
 div#twitter_div li {
   margin-top: .75em;
   margin-bottom: .75em;
