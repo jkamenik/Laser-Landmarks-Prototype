@@ -241,5 +241,84 @@ Image.create(
    :product    => 'Ornament',
    :subject    => 'Lighthouse'
 )
- 
- 
+
+Image.create(
+   :title      => '7 Foot Knoll Lighthouse',
+   :image_path => '7 Foot Knoll Lighthouse in Frame.jpg',
+   :icon_path  => '7 Foot Knoll Lighthouse in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
+
+Image.create(
+   :title      => 'Chesapeake Lightship',
+   :image_path => 'Chesapeake Lightship in Frame.jpg',
+   :icon_path  => 'Chesapeake Lightship in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
+
+Image.create(
+   :title      => 'Concord Point Lighthouse',
+   :image_path => 'Concord Point Lighthouse in Frame.jpg',
+   :icon_path  => 'Concord Point Lighthouse in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
+
+Image.create(
+   :title      => 'Fishing Battery Lighthouse',
+   :image_path => 'Fishing Battery Lighthouse in Frame.jpg',
+   :icon_path  => 'Fishing Battery Lighthouse in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
+
+Image.create(
+   :title      => 'Poole\'s Island Lighthouse',
+   :image_path => 'Poole\'s Island Lighthouse in Frame.jpg',
+   :icon_path  => 'Poole\'s Island Lighthouse in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
+
+Image.create(
+   :title      => 'Pride of Baltimore II',
+   :image_path => 'Pride of Baltimore II.jpg',
+   :icon_path  => 'Pride of Baltimore II.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Custom Engraving'
+)
+
+Image.create(
+   :title      => 'Principio Furnace',
+   :image_path => 'Principio Furnace in Frame.jpg',
+   :icon_path  => 'Principio Furnace in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Landmarks'
+)
+
+Image.create(
+   :title      => 'Thomas Point Lighthouse',
+   :image_path => 'Thomas Point Lighthouse in Frame.jpg',
+   :icon_path  => 'Thomas Point Lighthouse in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
+
+Image.create(
+   :title      => 'Turkey Point Lighthouse',
+   :image_path => 'Turkey Point Lighthouse in Frame.jpg',
+   :icon_path  => 'Turkey Point Lighthouse in Frame.jpg',
+   :material   => 'Mirror',
+   :product    => 'Framed Mirror',
+   :subject    => 'Lighthouse'
+)
